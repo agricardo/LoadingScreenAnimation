@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex Box</title>
+    <style>
+    @font-face {
+        font-family: Forza;
+        src: url(Forza-Medium.otf);
+    }
+    body{
+        margin: 0;
+    }
+    .container{
+            display: flex;
+            height: 100vh;
+            flex: 1;
+            flex-direction: column;
+    }
+    .first{
+        display: flex;
+        justify-content: center;
+        flex: 1;
+    }
+    .field{
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+
+    }
+    h5{
+        flex: 1;
+        font-family: Forza;
+        letter-spacing: 0.3rem;
+        font-size: 1rem;
+        margin-left: 20px;
+        margin-right: 20px;
+        color: #7D7773;
+    }
+    input{
+        flex: 2;
+        border: none;
+        border-bottom: 1px solid black;
+        padding: 1rem;
+        font-family: Forza;
+        color: #B3DAA6;
+        letter-spacing: 0.3rem;
+        font-family: Forza;
+        font-size: 0.75rem;
+    }
+    .three{
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .sign1{
+        text-align: center;
+        align-self: stretch;
+        font-family: Forza;
+        background-color: #B3DAA6;
+        padding: 1rem;
+        color: #FBFCFA;
+        letter-spacing: 0.1rem;
+    }
+    .sign2{
+        text-align: center;
+        align-self: stretch;
+        font-family: Forza;
+        background-color: #7D7773;
+        padding: 1rem;
+        color: #FBFCFA;
+        letter-spacing: 0.1rem;
+    }
+    img{
+        max-width: 50%;
+        align-self: center;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="first">
+            <img src="logo-whitebg.png" alt="image">
+        </div>
+        <div class="second">
+            <div class="field">
+                <h5>Email</h5>
+                <input type="text">
+            </div>
+            <div class="field">
+                <h5>Password</h5>
+                <input type="password">
+            </div>
+        </div>
+        <div class="three">
+            <div class="sign1">SIGN IN</div>
+            <div class="sign2">SIGN UP</div>
+        </div>
+    </div>
+
+</body>
+</html>
